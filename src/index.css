@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #0b3b60;
+    --primary-dark: #07253d;
+    --primary-light: #165384;
+    --secondary: #0d9488;
+    --secondary-dark: #0f766e;
+    --secondary-light: #14b8a6;
+    --bg-page: #f8fafc;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pulse keyframes for simulated audio waveform */
+@keyframes audioWave {
+  0%, 100% { height: 12px; }
+  50% { height: 48px; }
+}
+
+.animate-audio-wave-1 { animation: audioWave 0.8s ease-in-out infinite; }
+.animate-audio-wave-2 { animation: audioWave 1.1s ease-in-out infinite 0.15s; }
+.animate-audio-wave-3 { animation: audioWave 0.7s ease-in-out infinite 0.3s; }
+.animate-audio-wave-4 { animation: audioWave 1.3s ease-in-out infinite 0.1s; }
+.animate-audio-wave-5 { animation: audioWave 0.9s ease-in-out infinite 0.25s; }
+
+/* Govt Ribbon pattern */
+.gov-stripes {
+  background: linear-gradient(90deg, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+  height: 4px;
+}
